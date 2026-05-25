@@ -81,9 +81,7 @@ More implementation notes are in [docs/source-notes/firmware-behavior.md](docs/s
 
 ## Photos
 
-The repository includes diagrams and an upstream reference photo of the stock LYWSD03MMC. Add build photos under [docs/photos](docs/photos) before publishing a final project showcase.
-
-Before committing photos, remove EXIF metadata and avoid showing serial numbers, MAC addresses, personal rooms, mail labels, or account information.
+The repository includes diagrams and an upstream reference photo of the stock LYWSD03MMC.
 
 ## Current Limitations
 
