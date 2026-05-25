@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" role="img" aria-labelledby="title desc">
+  <title id="title">LYWSD03MMC SSD1306 and touch sensor wiring</title>
+  <desc id="desc">Diagram showing SSD1306 SDA to PB7/P11, SCL to PD7/P7, touch OUT to PA6/P8, and shared 3.3 V and ground.</desc>
+  <defs>
+    <style>
+      .bg { fill: #f7f7f4; }
+      .panel { fill: #ffffff; stroke: #202124; stroke-width: 2; }
+      .board { fill: #1d4f45; stroke: #12352f; stroke-width: 2; }
+      .oled { fill: #111827; stroke: #202124; stroke-width: 2; }
+      .screen { fill: #0b1220; stroke: #7dd3fc; stroke-width: 2; }
+      .touch { fill: #e8eef5; stroke: #202124; stroke-width: 2; }
+      .pad { fill: #f5c84c; stroke: #7a5b00; stroke-width: 1; }
+      .label { fill: #202124; font-family: Arial, sans-serif; font-size: 20px; }
+      .small { fill: #202124; font-family: Arial, sans-serif; font-size: 15px; }
+      .oledText { fill: #e5f7ff; font-family: Arial, sans-serif; font-size: 18px; }
+      .wireSda { fill: none; stroke: #2563eb; stroke-width: 5; }
+      .wireScl { fill: none; stroke: #16a34a; stroke-width: 5; }
+      .wireVcc { fill: none; stroke: #dc2626; stroke-width: 5; }
+      .wireGnd { fill: none; stroke: #111827; stroke-width: 5; }
+      .wireTouch { fill: none; stroke: #d97706; stroke-width: 5; }
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="560"/>
+  <rect class="panel" x="34" y="34" width="892" height="492" rx="10"/>
+
+  <rect class="board" x="370" y="110" width="220" height="330" rx="24"/>
+  <text class="label" x="408" y="88">LYWSD03MMC board</text>
+
+  <circle class="pad" cx="390" cy="170" r="13"/>
+  <circle class="pad" cx="390" cy="225" r="13"/>
+  <circle class="pad" cx="390" cy="280" r="13"/>
+  <circle class="pad" cx="390" cy="335" r="13"/>
+  <circle class="pad" cx="390" cy="390" r="13"/>
+
+  <text class="small" x="416" y="176">P11 / PB7 / SDA</text>
+  <text class="small" x="416" y="231">P7 / PD7 / SCL</text>
+  <text class="small" x="416" y="286">P8 / PA6 / TOUCH</text>
+  <text class="small" x="416" y="341">3.3 V</text>
+  <text class="small" x="416" y="396">GND</text>
+
+  <rect class="oled" x="82" y="118" width="210" height="188" rx="12"/>
+  <rect class="screen" x="104" y="146" width="166" height="96" rx="4"/>
+  <text class="oledText" x="126" y="186">SSD1306</text>
+  <text class="oledText" x="139" y="212">128x64</text>
+  <text class="small" x="112" y="275">GND  VCC  SCL  SDA</text>
+  <text class="label" x="112" y="96">OLED module</text>
+
+  <rect class="touch" x="690" y="178" width="170" height="142" rx="14"/>
+  <circle cx="775" cy="235" r="34" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text class="label" x="716" y="158">Touch module</text>
+  <text class="small" x="720" y="292">VCC  OUT  GND</text>
+
+  <path class="wireSda" d="M292 270 C330 270 336 170 390 170"/>
+  <path class="wireScl" d="M292 252 C328 252 336 225 390 225"/>
+  <path class="wireVcc" d="M212 306 C270 360 324 335 390 335"/>
+  <path class="wireGnd" d="M146 306 C235 430 308 390 390 390"/>
+
+  <path class="wireTouch" d="M690 250 C646 250 632 280 590 280"/>
+  <path class="wireVcc" d="M722 320 C670 362 636 340 590 335"/>
+  <path class="wireGnd" d="M830 320 C752 430 668 390 590 390"/>
+
+  <text class="small" x="84" y="358" fill="#2563eb">SDA to PB7/P11</text>
+  <text class="small" x="84" y="382" fill="#16a34a">SCL to PD7/P7</text>
+  <text class="small" x="84" y="406" fill="#dc2626">3.3 V shared power</text>
+  <text class="small" x="84" y="430" fill="#111827">GND shared ground</text>
+  <text class="small" x="650" y="378" fill="#d97706">OUT to PA6/P8</text>
+</svg>

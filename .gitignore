@@ -1,0 +1,28 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local build output
+build/
+dist/
+out/
+*.elf
+*.map
+*.lst
+*.o
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local private photos or captures
+docs/photos/private/
+docs/photos/raw/
