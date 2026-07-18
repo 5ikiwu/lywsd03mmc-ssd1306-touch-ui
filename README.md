@@ -15,6 +15,7 @@ This build is based on the ATC v58 firmware from [pvvx/ATC_MiThermometer](https:
 - Page-based interface for temperature, humidity, battery, status, and a small test/menu view.
 - Touch input on PA6/P8 for faster page/menu navigation.
 - Two touch variants: normal active-high and active-low.
+- Optional `OANA` menu page with `<3` heart markers.
 - Small OLED animation and modern compact UI layout.
 - Keeps the ATC firmware base for BLE advertising, sensor reading, configuration, and OTA flashing behavior.
 
@@ -45,8 +46,10 @@ See [docs/wiring.md](docs/wiring.md) for soldering notes, power notes, and diagr
 
 | File | Purpose |
 | --- | --- |
-| [firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin](firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin) | Main build for a normal active-high touch sensor. Start here. |
-| [firmware/ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin](firmware/ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin) | Same UI, for touch modules whose output is active-low. |
+| [firmware/ATC_SSD1306_oana_touch_ui_v58.bin](firmware/ATC_SSD1306_oana_touch_ui_v58.bin) | Main active-high build with the `OANA` menu page. Start here for the personalized UI. |
+| [firmware/ATC_SSD1306_oana_touch_ui_active_low_v58.bin](firmware/ATC_SSD1306_oana_touch_ui_active_low_v58.bin) | Same personalized UI, for active-low touch modules. |
+| [firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin](firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin) | Original non-personalized active-high touch UI build. |
+| [firmware/ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin](firmware/ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin) | Original non-personalized active-low touch UI build. |
 | [firmware/rescue/ATC_SSD1306_force_3C.bin](firmware/rescue/ATC_SSD1306_force_3C.bin) | OLED diagnostic/rescue build for SSD1306 address `0x3C`. |
 | [firmware/rescue/ATC_SSD1306_force_3D.bin](firmware/rescue/ATC_SSD1306_force_3D.bin) | OLED diagnostic/rescue build for SSD1306 address `0x3D`. |
 | [firmware/rescue/ATC_SSD1306_swap_3C.bin](firmware/rescue/ATC_SSD1306_swap_3C.bin) | Diagnostic build with swapped I2C pins, address `0x3C`. |
@@ -61,7 +64,7 @@ Checksums are in [firmware/SHA256SUMS.txt](firmware/SHA256SUMS.txt).
 3. Open [TelinkMiFlasher](https://pvvx.github.io/ATC_MiThermometer/TelinkMiFlasher.html).
 4. Connect to the thermometer.
 5. If the device is still on stock firmware, run activation when the flasher asks for it.
-6. Select `firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin`.
+6. Select `firmware/ATC_SSD1306_oana_touch_ui_v58.bin`.
 7. Start flashing and keep the device powered until the process completes.
 8. If touch behavior is inverted, flash the active-low variant instead.
 
@@ -76,6 +79,7 @@ The upstream ATC firmware already handles the sensor, BLE advertising, configura
 - The UI is rendered as 128x64 monochrome pages with compact status elements.
 - PA6/P8 is read as a digital touch input and debounced before changing pages or menu rows.
 - The active-low build flips the touch input polarity for modules wired or configured that way.
+- In the personalized build, the menu item previously used for the test page is relabeled `OANA` and opens a simple page with `OANA` and `<3` heart markers.
 
 More implementation notes are in [docs/source-notes/firmware-behavior.md](docs/source-notes/firmware-behavior.md).
 

@@ -17,7 +17,7 @@ For reliable flashing, pvvx recommends good battery level on LYWSD03MMC devices.
 2. Press `Connect`.
 3. Select the thermometer from the Bluetooth dialog.
 4. If the flasher asks for activation on stock firmware, run the activation step.
-5. In the firmware selector, choose `firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin`.
+5. In the firmware selector, choose `firmware/ATC_SSD1306_oana_touch_ui_v58.bin`.
 6. Press `Start Flashing`.
 7. Wait until the flasher reports completion.
 8. Reconnect power if the OLED does not restart automatically.
@@ -27,13 +27,13 @@ For reliable flashing, pvvx recommends good battery level on LYWSD03MMC devices.
 Use the normal build first:
 
 ```text
-firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin
+firmware/ATC_SSD1306_oana_touch_ui_v58.bin
 ```
 
 If the menu changes while not touched, or the touch module behaves inverted, flash:
 
 ```text
-firmware/ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin
+firmware/ATC_SSD1306_oana_touch_ui_active_low_v58.bin
 ```
 
 ## Recovery And Display Tests
@@ -53,7 +53,7 @@ The rescue builds are for display diagnosis. They do not include the final touch
 From the repository root:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\firmware\ATC_SSD1306_lopaka_touch_ui_v58.bin
+Get-FileHash -Algorithm SHA256 .\firmware\ATC_SSD1306_oana_touch_ui_v58.bin
 ```
 
 Compare the result with [firmware/SHA256SUMS.txt](../firmware/SHA256SUMS.txt).

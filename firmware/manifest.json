@@ -17,6 +17,16 @@
   },
   "files": [
     {
+      "path": "firmware/ATC_SSD1306_oana_touch_ui_v58.bin",
+      "purpose": "active-high touch UI build with OANA page",
+      "sha256": "DB0AE31869340CEE88AFC45E4F402CE3583973C9774DF6DC05D85D81F8B0E35D"
+    },
+    {
+      "path": "firmware/ATC_SSD1306_oana_touch_ui_active_low_v58.bin",
+      "purpose": "active-low touch UI build with OANA page",
+      "sha256": "8B87C5A2FF9C7B7331F80E804FEAAE7FBCB8840C43E0AB02BCB5EF29806C5D5A"
+    },
+    {
       "path": "firmware/ATC_SSD1306_lopaka_touch_ui_v58.bin",
       "purpose": "main active-high touch UI build",
       "sha256": "B93FD687497AC14156B8E67959877E343E3339F40F3A7D19A7543AD1474A1112"

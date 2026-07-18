@@ -16,6 +16,7 @@ The UI is designed around small pages:
 - Battery and device status.
 - Comfort/status overview.
 - Test/menu page for checking input and display behavior.
+- In the personalized build, an `OANA` menu entry opens a small page with `OANA` and `<3` heart markers.
 
 The exact page content may change between experimental builds. The main goal is to keep readings readable on a small OLED while avoiding overlapping text.
 

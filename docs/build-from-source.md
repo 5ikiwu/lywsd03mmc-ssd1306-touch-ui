@@ -38,6 +38,8 @@ Before claiming a reproducible source build:
 ```text
 ATC_SSD1306_lopaka_touch_ui_v58.bin
 ATC_SSD1306_lopaka_touch_ui_active_low_v58.bin
+ATC_SSD1306_oana_touch_ui_v58.bin
+ATC_SSD1306_oana_touch_ui_active_low_v58.bin
 ```
 
 Keep derived build names distinct from official upstream firmware so users do not confuse this project with the pvvx release binaries.
